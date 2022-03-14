@@ -6,7 +6,7 @@ import { resolveComponent } from 'vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/vite-sample' : './',
+  base: process.env.NODE_ENV === 'production' ? '/vite-sample/' : './',
   resolve: {
     alias: {
       '@': path.resolve('__dirname', '/src')
@@ -16,4 +16,4 @@ export default defineConfig({
     outDir: 'docs'
   },
   plugins: [vue()]
-})
+});
