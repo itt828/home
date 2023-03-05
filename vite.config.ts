@@ -1,19 +1,25 @@
-import path from 'path';
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { processExpression } from '@vue/compiler-core';
-import { resolveComponent } from 'vue';
+import path from "path";
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import { processExpression } from "@vue/compiler-core";
+import { resolveComponent } from "vue";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
   resolve: {
     alias: {
-      '@': path.resolve('__dirname', '/src')
-    }
+      "/@": path.resolve(__dirname, "src"),
+    },
   },
   build: {
-    outDir: 'docs'
+    outDir: "dist",
   },
-  plugins: [vue()]
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "/@/styles/common.scss";`,
+        charset: false,
+      },
+    },
+  },
+  plugins: [vue()],
 });
