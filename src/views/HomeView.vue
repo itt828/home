@@ -1,12 +1,4 @@
-<template>
-  <h1>This is itt828's home page</h1>
-</template>
+<template></template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({
-  name: "Home",
-  components: {},
-});
-</script>
+<script setup lang="ts"></script>
 <style scoped></style>

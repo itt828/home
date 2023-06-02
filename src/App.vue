@@ -1,18 +1,7 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view />
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-  name: 'App',
-  components: {},
-})
-</script>
+<script setup lang="ts"></script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
