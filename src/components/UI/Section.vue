@@ -1,7 +1,9 @@
 <template>
-  <div :class="$style.title">{{ title }}</div>
-  <div class="content">
-    <slot />
+  <div>
+    <div :class="$style.title">{{ title }}</div>
+    <div class="content">
+      <slot />
+    </div>
   </div>
 </template>
 
