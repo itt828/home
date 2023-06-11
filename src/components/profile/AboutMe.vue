@@ -32,8 +32,10 @@
 
 .icon {
   align-self: center;
+  justify-self: center;
   width: 200px;
   height: 200px;
+
   & > img {
     width: 100%;
     height: 100%;
