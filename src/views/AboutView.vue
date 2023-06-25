@@ -1,9 +1,12 @@
 <template>
   <div :class="$style.container">
-    <AboutMe />
-    <Section title="スキル" :class="$style.skills">
+    <!-- <MyImage /> -->
+    <Card title="itt" :class="$style.aboutMe">
+      <AboutMe />
+    </Card>
+    <Card title="skill" :class="$style.skills">
       <Skills />
-    </Section>
+    </Card>
   </div>
 </template>
 
@@ -11,15 +14,22 @@
 import Section from "@/components/UI/Section.vue";
 import AboutMe from "@/components/profile/AboutMe.vue";
 import Skills from "@/components/profile/Skills.vue";
+import MyImage from "../components/profile/MyImage.vue";
+import Card from "../components/UI/Card.vue";
 </script>
 
 <style module lang="scss">
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+.aboutMe {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
 .skills {
-  margin-left: 16px;
+  grid-column: 1 / 2;
+  grid-row: 2;
 }
 </style>

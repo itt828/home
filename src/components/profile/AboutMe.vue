@@ -4,7 +4,7 @@
       <img src="https://q.trap.jp/api/v3/public/icon/itt" />
     </div>
     <div :class="$style.profile">
-      <div :class="$style.name">itt</div>
+      <!-- <div :class="$style.name">itt</div> -->
       所属
       <ul>
         <li>東京工業大学 学士3年</li>
