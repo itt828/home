@@ -10,9 +10,14 @@ import CommonHeader from "./components/CommonHeader.vue";
 </script>
 
 <style lang="scss">
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+}
 #app {
   height: 100%;
-  width: 80%;
+  width: 100%;
   font-family: "M PLUS 1", sans-serif;
   color: $text;
 }
