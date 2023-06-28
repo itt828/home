@@ -1,7 +1,7 @@
 <template>
-  <Section :class="$style.section" title="Works">
-    <div :class="$style.container">
-      <TagSearch />
+  <div :class="$style.container">
+    <TagSearch :class="$style.tagSearch" />
+    <div :class="$style.works">
       <div :class="$style.elements">
         <WorkCard />
         <WorkCard />
@@ -12,7 +12,7 @@
         <WorkCard />
       </div>
     </div>
-  </Section>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -22,20 +22,28 @@ import TagSearch from "../components/UI/TagSearch.vue";
 </script>
 
 <style module lang="scss">
-.section {
-  max-width: 1300px;
-  margin: auto;
-}
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  height: 100%;
+  gap: 12px;
+}
+.tagSearch {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.works {
+  @include borderedFrame;
+  // flex: none;
+  overflow: auto;
+  min-height: 0;
 }
 .elements {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(320px, 1fr));
-  grid-auto-rows: 600px;
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 12px;
   justify-items: center;
 }
 </style>
