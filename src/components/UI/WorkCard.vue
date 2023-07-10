@@ -1,26 +1,34 @@
 <template>
   <div :class="$style.card">
     <div :class="$style.image">
-      <img src="/src/assets/knoq.png" />
+      <img :src="props.image" />
     </div>
     <div :class="$style.description">
-      <div :class="$style.title">hoge</div>
+      <div :class="$style.title">{{ props.title }}</div>
       <div>
         <span :class="$style.text">
-          ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああaaaaaaaaaaaaaaaaaあああああいいいいいいいいい
+          {{ props.description }}
         </span>
       </div>
     </div>
     <div :class="$style.skillContainer">
-      <SkillTag />
-      <SkillTag />
-      <SkillTag />
-      <SkillTag />
+      <SkillTag
+        v-for="skill in skills"
+        :key="skill.name"
+        :name="skill.name"
+        :color="skill.color"
+      />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import SkillTag from "../SkillTag.vue";
+const props = defineProps<{
+  image: string;
+  title: string;
+  description: string;
+  skills: { name: string; color: string }[];
+}>();
 </script>
 
 <style module lang="scss">
@@ -32,11 +40,12 @@ import SkillTag from "../SkillTag.vue";
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 16px;
 }
 .image {
   display: flex;
   justify-content: center;
+  max-height: 300px;
   & > img {
     object-fit: contain;
     max-width: 100%;

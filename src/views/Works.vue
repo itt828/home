@@ -3,33 +3,33 @@
     <TagSearch :class="$style.tagSearch" />
     <div :class="$style.works">
       <div :class="$style.elements">
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+        <WorkCard
+          image="/src/assets/knoq.png"
+          title="knoQ"
+          description="hoegegee"
+          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
+        />
+        <WorkCard
+          image="/src/assets/fooder.png"
+          title="knoQ"
+          description="hoegegee"
+          :skills="[
+            { name: 'Vue', color: '#bbaacc' },
+            { name: 'Vue2', color: '#f2a' },
+          ]"
+        />
+        <WorkCard
+          image="/src/assets/knoq.png"
+          title="knoQ"
+          description="hoegegee"
+          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
+        />
+        <WorkCard
+          image="/src/assets/knoq.png"
+          title="knoQ"
+          description="hoegegee"
+          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
+        />
       </div>
     </div>
   </div>

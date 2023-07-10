@@ -1,10 +1,21 @@
 <template>
-  <div :class="$style.card">
-    <div :class="$style.icon"></div>
-    <div :class="$style.name">hoge</div>
-  </div>
+  <RouterLink :to="link" :class="$style.link">
+    <div :class="$style.card">
+      <div :class="$style.icon" :style="{ backgroundColor: props.color }"></div>
+      <div :class="$style.name">{{ props.name }}</div>
+    </div>
+  </RouterLink>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from "vue";
+import { RouterLink } from "vue-router";
+
+const link = computed(() => `/works?tag=${props.name}`);
+const props = defineProps<{
+  name: string;
+  color: string;
+}>();
+</script>
 <style module lang="scss">
 .card {
   height: 32px;
@@ -24,6 +35,14 @@
   height: 12px;
   margin: 4px 8px;
   border-radius: 50%;
-  background-color: #3a7;
+}
+.link {
+  text-decoration: none;
+  &:link {
+    color: $text;
+  }
+  &:visited {
+    color: $text;
+  }
 }
 </style>
