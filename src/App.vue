@@ -25,22 +25,21 @@ body {
   max-width: 1080px;
   display: flex;
   flex-direction: column;
+  margin: 0px auto;
 }
 </style>
 
 <style module lang="scss">
 .header {
-  margin: 0 20px;
+  margin: 8px 20px 0;
   max-width: 1080px;
   margin-bottom: 12px;
 }
 main {
+  margin: 0 20px 8px;
   max-width: 1080px;
   height: 100%;
   min-height: 0;
   overflow: auto;
-}
-.content {
-  margin: 0 20px;
 }
 </style>
