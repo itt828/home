@@ -10,6 +10,26 @@
         <WorkCard />
         <WorkCard />
         <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
+        <WorkCard />
       </div>
     </div>
   </div>
@@ -34,7 +54,6 @@ import TagSearch from "../components/UI/TagSearch.vue";
 }
 .works {
   @include borderedFrame;
-  // flex: none;
   overflow: auto;
   min-height: 0;
 }
@@ -42,7 +61,8 @@ import TagSearch from "../components/UI/TagSearch.vue";
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  grid-auto-rows: 300px;
+  // grid-auto-rows: 440px;
+  grid-auto-rows: max-content;
   gap: 12px;
   justify-items: center;
 }

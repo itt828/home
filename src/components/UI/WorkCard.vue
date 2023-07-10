@@ -11,9 +11,17 @@
         </span>
       </div>
     </div>
+    <div :class="$style.skillContainer">
+      <SkillTag />
+      <SkillTag />
+      <SkillTag />
+      <SkillTag />
+    </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SkillTag from "../SkillTag.vue";
+</script>
 
 <style module lang="scss">
 .card {
@@ -22,13 +30,13 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .image {
-  height: 60%;
   display: flex;
   justify-content: center;
-  // max-height: 200px;
-  // max-height: min(60%, 200px);
   & > img {
     object-fit: contain;
     max-width: 100%;
@@ -47,6 +55,7 @@
   font-size: 1rem;
 }
 .skillContainer {
+  padding: 0 12px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;

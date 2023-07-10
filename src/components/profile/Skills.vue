@@ -1,20 +1,17 @@
 <template>
   <div :class="$style.container">
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
-    <SkillCard />
+    <SkillTag />
+    <SkillTag />
+    <SkillTag />
+    <SkillTag />
+    <SkillTag />
+    <SkillTag />
+    <SkillTag />
   </div>
 </template>
 
 <script setup lang="ts">
-import SkillCard from "@/components/UI/SkillCard.vue";
+import SkillTag from "@/components/SkillTag.vue";
 </script>
 
 <style module>
