@@ -1,21 +1,13 @@
 <template>
   <div :class="$style.container">
-    <!-- <MyImage /> -->
-    <Card title="itt" :class="$style.aboutMe">
-      <AboutMe />
-    </Card>
-    <Card title="skill" :class="$style.skills">
-      <Skills />
-    </Card>
+    <AboutMe :class="$style.aboutMe" />
+    <Skills :class="$style.skills" />
   </div>
 </template>
 
 <script setup lang="ts">
-import Section from "@/components/UI/Section.vue";
-import AboutMe from "@/components/profile/AboutMe.vue";
-import Skills from "@/components/profile/Skills.vue";
-import MyImage from "../components/profile/MyImage.vue";
-import Card from "../components/UI/Card.vue";
+import AboutMe from "@/components/AboutView/AboutMe.vue";
+import Skills from "@/components/AboutView/Skills.vue";
 </script>
 
 <style module lang="scss">

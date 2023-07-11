@@ -22,7 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import SkillTag from "../SkillTag.vue";
+import SkillTag from "@/components/SkillTag.vue";
 const props = defineProps<{
   image: string;
   title: string;
