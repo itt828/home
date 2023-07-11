@@ -9,7 +9,11 @@
           :image="work.image"
           :title="work.title"
           :description="work.description"
+          :descriptionDetail="work.descriptionDetail"
           :skills="getSkills(work.skills)"
+          @selected="selected = work.title"
+          @close="selected = null"
+          :isSelected="selected === work.title"
         />
       </div>
     </div>
@@ -21,6 +25,9 @@ import WorkCard from '@/components/WorksView/WorkCard.vue'
 import TagSearch from '@/components/WorksView/TagSearch.vue'
 import { works } from '@/assets/works'
 import { getSkills } from '@/utils'
+import { ref } from 'vue'
+
+const selected = ref<string | null>(null)
 </script>
 
 <style module lang="scss">

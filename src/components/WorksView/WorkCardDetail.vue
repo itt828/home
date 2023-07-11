@@ -7,17 +7,9 @@
       <div :class="$style.title">{{ props.title }}</div>
       <div>
         <span :class="$style.text">
-          {{ props.description }}
+          {{ props.descriptionDetail }}
         </span>
       </div>
-    </div>
-    <div :class="$style.skillContainer">
-      <SkillTag
-        v-for="skill in fixedSkills"
-        :key="skill.name"
-        :name="skill.name"
-        :color="skill.color"
-      />
     </div>
   </div>
 </template>
@@ -29,22 +21,29 @@ import { computed } from 'vue'
 const props = defineProps<{
   image: string
   title: string
-  description: string
-  skills: Array<{ name: string; color: string } | undefined>
+  descriptionDetail: string
 }>()
 const fixedSkills = computed<Skill[]>(() => skills.filter((v) => v !== undefined))
 </script>
 
 <style module lang="scss">
 .card {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   border: 2px $accent solid;
+  padding-bottom: 24px;
   border-radius: 12px;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  width: 80%;
+  max-width: calc(1080px * 0.5);
+  background-color: $background;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  // height: 600px;
+  max-height: 60%;
 }
 .image {
   display: flex;
