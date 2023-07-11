@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import AboutMe from "@/components/AboutView/AboutMe.vue";
-import Skills from "@/components/AboutView/Skills.vue";
+import AboutMe from '@/components/AboutView/AboutMe.vue'
+import Skills from '@/components/AboutView/Skills.vue'
 </script>
 
 <style module lang="scss">

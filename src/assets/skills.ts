@@ -1,3 +1,3 @@
-import { Skill } from "@/models";
+import { Skill } from '@/models'
 
-export const skills: Skill[] = [];
+export const skills: Skill[] = []

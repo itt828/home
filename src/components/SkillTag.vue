@@ -7,14 +7,14 @@
   </RouterLink>
 </template>
 <script setup lang="ts">
-import { computed } from "vue";
-import { RouterLink } from "vue-router";
+import { computed } from 'vue'
+import { RouterLink } from 'vue-router'
 
-const link = computed(() => `/works?tag=${props.name}`);
+const link = computed(() => `/works?tag=${props.name}`)
 const props = defineProps<{
-  name: string;
-  color: string;
-}>();
+  name: string
+  color: string
+}>()
 </script>
 <style module lang="scss">
 .card {

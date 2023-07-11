@@ -12,23 +12,18 @@
       </div>
     </div>
     <div :class="$style.skillContainer">
-      <SkillTag
-        v-for="skill in skills"
-        :key="skill.name"
-        :name="skill.name"
-        :color="skill.color"
-      />
+      <SkillTag v-for="skill in skills" :key="skill.name" :name="skill.name" :color="skill.color" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import SkillTag from "@/components/SkillTag.vue";
+import SkillTag from '@/components/SkillTag.vue'
 const props = defineProps<{
-  image: string;
-  title: string;
-  description: string;
-  skills: { name: string; color: string }[];
-}>();
+  image: string
+  title: string
+  description: string
+  skills: { name: string; color: string }[]
+}>()
 </script>
 
 <style module lang="scss">

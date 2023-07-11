@@ -6,14 +6,14 @@
 </template>
 
 <script setup lang="ts">
-import CommonHeader from "./components/CommonHeader.vue";
-import "normalize.css";
+import CommonHeader from './components/CommonHeader.vue'
+import 'normalize.css'
 </script>
 
 <style lang="scss">
 html {
   height: 100%;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
   background-color: $background;
   color: $text;
 }
