@@ -14,15 +14,11 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Skill } from '@/models'
-import { computed } from 'vue'
-import { skills } from '@/utils'
 const props = defineProps<{
   image: string
   title: string
   descriptionDetail: string
 }>()
-const fixedSkills = computed<Skill[]>(() => skills.filter((v) => v !== undefined))
 </script>
 
 <style module lang="scss">
