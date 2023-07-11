@@ -42,7 +42,6 @@ const fixedSkills = computed<Skill[]>(() => skills.filter((v) => v !== undefined
   display: flex;
   flex-direction: column;
   gap: 16px;
-  // height: 600px;
   max-height: 60%;
 }
 .image {
@@ -56,15 +55,16 @@ const fixedSkills = computed<Skill[]>(() => skills.filter((v) => v !== undefined
   }
 }
 .description {
-  padding: 0 12px;
+  padding: 8px 20px;
 }
 .title {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 1.25rem;
 }
 .text {
   overflow-wrap: normal;
   font-size: 1rem;
+  // font-weight: 400;
 }
 .skillContainer {
   padding: 0 12px;

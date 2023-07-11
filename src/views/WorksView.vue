@@ -50,7 +50,6 @@ const selected = ref<string | null>(null)
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  // grid-auto-rows: 440px;
   grid-auto-rows: max-content;
   gap: 12px;
   justify-items: center;
