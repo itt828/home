@@ -16,7 +16,8 @@ const props = defineProps<{ title: string }>()
   @include borderedFrame;
 }
 .title {
-  font-size: 2rem;
-  margin-bottom: 4px;
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 </style>

@@ -23,7 +23,9 @@
   </Card>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Card from '@/components/UI/Card.vue'
+</script>
 
 <style module lang="scss">
 .container {
