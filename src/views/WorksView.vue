@@ -23,11 +23,16 @@
 <script setup lang="ts">
 import WorkCard from '@/components/WorksView/WorkCard.vue'
 import TagSearch from '@/components/WorksView/TagSearch.vue'
-import { works } from '@/assets/works'
 import { getSkills } from '@/utils'
 import { ref } from 'vue'
+import { load } from 'js-yaml'
+import worksYaml from '@/assets/works.yaml?raw'
+import { Work } from '@/models'
 
 const selected = ref<string | null>(null)
+
+const works = load(worksYaml) as Work[]
+console.log(works)
 </script>
 
 <style module lang="scss">

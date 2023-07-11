@@ -7,8 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import { skills } from '@/assets/skills'
 import SkillTag from '@/components/SkillTag.vue'
+import skillsYaml from '@/assets/skills.yaml?raw'
+import { load } from 'js-yaml'
+import { Skill } from '@/models'
+const skills = load(skillsYaml) as Skill[]
 </script>
 
 <style module>

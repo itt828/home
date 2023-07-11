@@ -1,0 +1,40 @@
+- title: knoQ
+  description: イベント管理アプリ
+  descriptionDetail: |-
+      イベント管理アプリ。
+      サークル内の行事や、サークルで確保した教室を管理できる。
+      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、新機能
+      の追加を目的としたv2の制作の中心メンバーをしている。
+      https://github.com/traPtitech/knoQ-UI,
+      https://github.com/traPtitech/knoQ_R-UI
+  image: /src/assets/knoq.png
+  skills:
+    - Vue
+    - TypeScript
+- title: Fooder
+  description: レストラン検索アプリ
+  descriptionDetail: |-
+    レストラン検索アプリ
+    3回のスワイプで
+  image: /src/assets/fooder.png
+  skills: []
+- title: knoQ
+  description: イベント管理アプリ
+  descriptionDetail: |-
+      イベント管理アプリ。
+      サークル内の行事や、サークルで確保した教室を管理できる。
+      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、新機能
+      の追加を目的としたv2の制作の中心メンバーをしている。
+      https://github.com/traPtitech/knoQ-UI,
+      https://github.com/traPtitech/knoQ_R-UI
+  image: /src/assets/knoq.png
+  skills:
+    - Vue
+    - TypeScript
+- title: Fooder
+  description: レストラン検索アプリ
+  descriptionDetail: |-
+    レストラン検索アプリ
+    3回のスワイプで
+  image: /src/assets/fooder.png
+  skills: []
