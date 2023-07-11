@@ -4,31 +4,12 @@
     <div :class="$style.works">
       <div :class="$style.elements">
         <WorkCard
-          image="/src/assets/knoq.png"
-          title="knoQ"
-          description="hoegegee"
-          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
-        />
-        <WorkCard
-          image="/src/assets/fooder.png"
-          title="knoQ"
-          description="hoegegee"
-          :skills="[
-            { name: 'Vue', color: '#bbaacc' },
-            { name: 'Vue2', color: '#f2a' },
-          ]"
-        />
-        <WorkCard
-          image="/src/assets/knoq.png"
-          title="knoQ"
-          description="hoegegee"
-          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
-        />
-        <WorkCard
-          image="/src/assets/knoq.png"
-          title="knoQ"
-          description="hoegegee"
-          :skills="[{ name: 'Vue', color: '#bbaacc' }]"
+          v-for="work in works"
+          :key="work.title"
+          :image="work.image"
+          :title="work.title"
+          :description="work.description"
+          :skills="getSkills(work.skills)"
         />
       </div>
     </div>
@@ -37,8 +18,23 @@
 
 <script setup lang="ts">
 import WorkCard from "../components/UI/WorkCard.vue";
-import Section from "../components/UI/Section.vue";
 import TagSearch from "../components/UI/TagSearch.vue";
+import { Work } from "../models";
+import { useSkillStore } from "@/store/skill";
+import { storeToRefs } from "pinia";
+
+const useSkills = useSkillStore();
+const { getSkills } = storeToRefs(useSkills);
+
+const works: Work[] = [
+  {
+    title: "knoQ",
+    description: "イベント管理アプリ",
+    descriptionDetail: "イベント管理アプリ",
+    image: "/src/assets/knoq.png",
+    skills: ["Vue", "TypeScript"],
+  },
+];
 </script>
 
 <style module lang="scss">

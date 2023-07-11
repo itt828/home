@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const tag = z.object({
+export const skill = z.object({
   name: z.string(),
   color: z.string(),
 });
@@ -13,5 +13,5 @@ export const work = z.object({
   skills: z.array(z.string()),
 });
 
-export type Tag = z.infer<typeof tag>;
+export type Skill = z.infer<typeof skill>;
 export type Work = z.infer<typeof work>;
