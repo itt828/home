@@ -1,40 +1,59 @@
 - title: knoQ
-  description: イベント管理アプリ
+  description: イベント・進捗部屋管理アプリ
   descriptionDetail: |-
       イベント管理アプリ。
-      サークル内の行事や、サークルで確保した教室を管理できる。
-      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、新機能
-      の追加を目的としたv2の制作の中心メンバーをしている。
-      https://github.com/traPtitech/knoQ-UI,
-      https://github.com/traPtitech/knoQ_R-UI
+      サークル内の行事やサークルで確保した大学の教室などを管理できる。
+      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、
+      新機能の追加を目的としたv2の制作の中心メンバーをしている。
+      - [GitHub](https://github.com/traPtitech/knoQ-UI)
+      - [GitHub(v2)](https://github.com/traPtitech/knoQ_R-UI)
+      - [ブログ](https://trap.jp/post/1066/)
   image: /src/assets/knoq.png
   skills:
     - Vue
     - TypeScript
 - title: Fooder
-  description: レストラン検索アプリ
+  description: レストラン即断即決アプリ
   descriptionDetail: |-
-    レストラン検索アプリ
-    3回のスワイプで
+    レストラン検索アプリ。
+    検索したい地点を入力するか、現在地から取得し、
+    3回のスワイプでレストランを提案する。
+
+    ハッカソンの作品として、5人でフロントエンド, バックエンドに別れて一週間で制作。
+    優秀賞、チームラボ賞を受賞。
+    - [アプリ](https://fooder.pages.dev/)
+    - [GitHub](https://github.com/22hack12spring/Fooder-UI)
+    - [ブログ](https://trap.jp/post/1603/)
   image: /src/assets/fooder.png
-  skills: []
-- title: knoQ
-  description: イベント管理アプリ
+  skills: 
+    - Vue
+    - TypeScript
+- title: tuitui
+  description: 観光地直感検索サービス
   descriptionDetail: |-
-      イベント管理アプリ。
-      サークル内の行事や、サークルで確保した教室を管理できる。
-      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、新機能
-      の追加を目的としたv2の制作の中心メンバーをしている。
-      https://github.com/traPtitech/knoQ-UI,
-      https://github.com/traPtitech/knoQ_R-UI
-  image: /src/assets/knoq.png
+    画像を前面に押し出したUIで、直感に任せて観光地を検索できるサービス。
+
+    みやぎハッカソン2023の作品として、チームで3日間で作成。
+    フロントエンドを担当し、主にメインの画面を作成した。縦横に
+    - [ブログ](https://trap.jp/post/1808/)
+
+  image: /src/assets/tuitui.png
   skills:
     - Vue
     - TypeScript
-- title: Fooder
-  description: レストラン検索アプリ
+- title: BOT_itt
+  description: 部内製SNS向けのbot
   descriptionDetail: |-
-    レストラン検索アプリ
-    3回のスワイプで
-  image: /src/assets/fooder.png
-  skills: []
+    部内製SNSの[traQ](https://github.com/traPtitech/traQ)で動作するbot。
+    Rustで書かれており、緊急地震速報(現在提供元の規約変更により廃止済み)、地震情報、シェル芸の実行といった機能を備えている。
+    - [GitHub](https://github.com/itt828/traq-bot-itt)
+  image: /src/assets/bot-itt.png
+  skills: ['Rust']
+
+- title: blog(WIP)
+  description: 自作ブログシステム
+  descriptionDetail: |-
+    WebサーバーとしてのRust、GraphQL、クリーンアーキテクチャを学ぶために現在作成中。
+    - [GitHub](https://github.com/itt828/graphql-benkyo)
+  image: a
+  skills: ['Rust', 'GraphQL']

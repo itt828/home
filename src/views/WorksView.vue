@@ -32,7 +32,6 @@ import { Work } from '@/models'
 const selected = ref<string | null>(null)
 
 const works = load(worksYaml) as Work[]
-console.log(works)
 </script>
 
 <style module lang="scss">
