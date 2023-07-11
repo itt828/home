@@ -1,35 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <CommonHeader :class="$style.header" />
+  <main>
+    <router-view :class="$style.content" />
+  </main>
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-  name: 'App',
-  components: {},
-})
+
+<script setup lang="ts">
+import CommonHeader from './components/CommonHeader.vue'
+import 'normalize.css'
 </script>
-<style>
+
+<style lang="scss">
+html {
+  height: 100%;
+  font-family: 'M PLUS 1', sans-serif;
+  background-color: $background;
+  color: $text;
+}
+body {
+  height: 100%;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
 }
-#nav {
-  padding: 10px;
+</style>
+
+<style module lang="scss">
+.header {
+  margin: 8px 20px 0;
+  max-width: 1080px;
+  margin-bottom: 12px;
 }
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
+main {
+  margin: 0 20px 8px;
+  max-width: 1080px;
+  height: 100%;
+  min-height: 0;
+  overflow: auto;
 }
 </style>
