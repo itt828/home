@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import WorkCard from "@/components/UI/WorkCard.vue";
-import TagSearch from "@/components/UI/TagSearch.vue";
+import WorkCard from "@/components/WorksView/WorkCard.vue";
+import TagSearch from "@/components/WorksView/TagSearch.vue";
 import { works } from "@/assets/works";
 import { getSkills } from "@/utils";
 </script>
