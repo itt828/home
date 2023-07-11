@@ -14,7 +14,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import SkillTag from '@/components/SkillTag.vue'
 import { Skill } from '@/models'
 import { computed } from 'vue'
 import { skills } from '@/utils'
