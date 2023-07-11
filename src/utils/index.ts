@@ -1,7 +1,9 @@
-import { Skill, skill } from '@/models'
-import { skills } from '@/assets/skills'
+import { Skill } from '@/models'
 import { computed } from 'vue'
+import skillsYaml from '@/assets/skills.yaml?raw'
+import { load } from 'js-yaml'
 
+export const skills = load(skillsYaml) as Skill[]
 export const getSkills = computed(
   () =>
     (skillnames: string[]): (Skill | undefined)[] =>

@@ -14,10 +14,10 @@
   </div>
 </template>
 <script setup lang="ts">
-import { skills } from '@/assets/skills'
 import SkillTag from '@/components/SkillTag.vue'
 import { Skill } from '@/models'
 import { computed } from 'vue'
+import { skills } from '@/utils'
 const props = defineProps<{
   image: string
   title: string
