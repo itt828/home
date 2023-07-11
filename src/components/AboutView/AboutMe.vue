@@ -5,19 +5,7 @@
         <img src="https://q.trap.jp/api/v3/public/icon/itt" />
       </div>
       <div :class="$style.profile">
-        所属
-        <ul>
-          <li>東京工業大学 学士3年</li>
-          <li>東京工業大学デジタル創作同好会traP所属</li>
-        </ul>
-        <div>traPで主にフロントエンドを書いています。</div>
-        リンク
-        <ul>
-          <li>github:</li>
-          <li>twitter:</li>
-          <li>ブログ(traP)</li>
-          <li>ブログ(個人)</li>
-        </ul>
+        <div v-html="md.render(AboutMeMd)" />
       </div>
     </div>
   </Card>
@@ -25,6 +13,13 @@
 
 <script setup lang="ts">
 import Card from '@/components/UI/Card.vue'
+import MarkdownIt from 'markdown-it'
+import AboutMeMd from '@/assets/aboutMe.md?raw'
+
+const md = new MarkdownIt({
+  breaks: true,
+  linkify: true
+})
 </script>
 
 <style module lang="scss">
