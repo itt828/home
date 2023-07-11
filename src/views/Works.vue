@@ -19,22 +19,8 @@
 <script setup lang="ts">
 import WorkCard from "../components/UI/WorkCard.vue";
 import TagSearch from "../components/UI/TagSearch.vue";
-import { Work } from "../models";
-import { useSkillStore } from "@/store/skill";
-import { storeToRefs } from "pinia";
-
-const useSkills = useSkillStore();
-const { getSkills } = storeToRefs(useSkills);
-
-const works: Work[] = [
-  {
-    title: "knoQ",
-    description: "イベント管理アプリ",
-    descriptionDetail: "イベント管理アプリ",
-    image: "/src/assets/knoq.png",
-    skills: ["Vue", "TypeScript"],
-  },
-];
+import { works } from "@/assets/works";
+import { getSkills } from "@/utils";
 </script>
 
 <style module lang="scss">

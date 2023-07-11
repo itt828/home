@@ -1,5 +1,5 @@
 <template>
-  <CommonHeader :class="$style.header" />
+  <!-- <CommonHeader :class="$style.header" /> -->
   <main>
     <router-view :class="$style.content" />
   </main>
