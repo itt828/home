@@ -22,6 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { skills } from '@/assets/skills'
 import SkillTag from '@/components/SkillTag.vue'
 import { Skill } from '@/models'
 import { computed } from 'vue'
@@ -29,9 +30,9 @@ const props = defineProps<{
   image: string
   title: string
   description: string
-  skills: Array<Skill | undefined>
+  skills: Array<{ name: string; color: string } | undefined>
 }>()
-const fixedSkills = computed<Skill[]>(() => props.skills.filter((v): v is Skill => v !== undefined))
+const fixedSkills = computed<Skill[]>(() => skills.filter((v) => v !== undefined))
 </script>
 
 <style module lang="scss">

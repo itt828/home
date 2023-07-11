@@ -19,9 +19,10 @@ import { RouterLink } from 'vue-router'
 
 <style module lang="scss">
 .header {
+  @include borderedFrame;
   display: flex;
   justify-content: space-between;
-  @include borderedFrame;
+  padding: 8px 24px;
 }
 .path {
   font-size: 1.25rem;
