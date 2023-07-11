@@ -6,19 +6,26 @@
     <div :class="$style.description">
       <div :class="$style.title">{{ props.title }}</div>
       <div>
-        <span :class="$style.text">
-          {{ props.descriptionDetail }}
-        </span>
+        <div :class="$style.text">
+          <div v-html="md.render(props.descriptionDetail)" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
+import MarkdownIt from 'markdown-it'
+
 const props = defineProps<{
   image: string
   title: string
   descriptionDetail: string
 }>()
+
+const md = new MarkdownIt({
+  breaks: true,
+  linkify: true
+})
 </script>
 
 <style module lang="scss">
