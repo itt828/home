@@ -8,7 +8,7 @@
       - [GitHub](https://github.com/traPtitech/knoQ-UI)
       - [GitHub(v2)](https://github.com/traPtitech/knoQ_R-UI)
       - [ブログ](https://trap.jp/post/1066/)
-  image: /src/assets/knoq.png
+  image: /knoq.png
   skills:
     - Vue
     - TypeScript
@@ -24,7 +24,7 @@
     - [アプリ](https://fooder.pages.dev/)
     - [GitHub](https://github.com/22hack12spring/Fooder-UI)
     - [ブログ](https://trap.jp/post/1603/)
-  image: /src/assets/fooder.png
+  image: /fooder.png
   skills: 
     - Vue
     - TypeScript
@@ -37,7 +37,7 @@
     フロントエンドを担当し、主にメインの画面を作成した。縦横に
     - [ブログ](https://trap.jp/post/1808/)
 
-  image: /src/assets/tuitui.png
+  image: /tuitui.png
   skills:
     - Vue
     - TypeScript
@@ -47,11 +47,11 @@
     部内製SNSの[traQ](https://github.com/traPtitech/traQ)で動作するbot。
     Rustで書かれており、緊急地震速報(現在提供元の規約変更により廃止済み)、地震情報、シェル芸の実行といった機能を備えている。
     - [GitHub](https://github.com/itt828/traq-bot-itt)
-  image: /src/assets/bot-itt.png
+  image: /bot-itt.png
   skills: ['Rust']
 
 - title: blog(WIP)
-  description: 自作ブログシステム
+  description: 自作ブログサービス
   descriptionDetail: |-
     WebサーバーとしてのRust、GraphQL、クリーンアーキテクチャを学ぶために現在作成中。
     - [GitHub](https://github.com/itt828/graphql-benkyo)
