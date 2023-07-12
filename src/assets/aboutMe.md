@@ -7,3 +7,4 @@ traPで主にフロントエンドを書いています。また、趣味でRust
 アカウント
 - GitHub: https://github.com/itt828
 - ブログ: https://trap.jp/author/itt
+- AtCoder: https://atcoder.jp/users/itt828
