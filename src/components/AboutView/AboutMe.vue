@@ -25,16 +25,14 @@ const md = new MarkdownIt({
 <style module lang="scss">
 .container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .icon {
   align-self: center;
   justify-self: center;
-  width: 200px;
-  height: 200px;
-
+  max-width: 200px;
   & > img {
+    aspect-ratio: 1;
     width: 100%;
     height: 100%;
   }
