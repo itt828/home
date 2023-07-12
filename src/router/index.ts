@@ -3,7 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import WorksView from '@/views/WorksView.vue'
 
-const routes: Array<RouteRecordRaw> = [
+export const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
@@ -21,9 +21,9 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes
-})
+// const router = createRouter({
+//   history: createWebHistory(import.meta.env.BASE_URL),
+//   routes
+// })
 
-export default router
+// export default router
