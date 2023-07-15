@@ -1,10 +1,14 @@
 - title: knoQ
   description: イベント・進捗部屋管理アプリ
   descriptionDetail: |-
-      イベント管理アプリ。
-      サークル内の行事やサークルで確保した大学の教室などを管理できる。
-      保守・機能改善を行いながら、Vue3への移行とデザインの刷新、
+      イベント・進捗部屋管理アプリ。
+      サークル内の行事と、サークルで確保した大学の教室などの部屋を管理できる。
+      現行のknoQ UIのv1の保守・機能改善を行いながら、Vue3への移行とデザインの刷新、
       新機能の追加を目的としたv2の制作の中心メンバーをしている。
+
+      v1ではVue CliからViteへの移行、UIの実装などを行った。
+
+      リンク
       - [GitHub](https://github.com/traPtitech/knoQ-UI)
       - [GitHub(v2)](https://github.com/traPtitech/knoQ_R-UI)
       - [ブログ](https://trap.jp/post/1066/)
@@ -16,14 +20,17 @@
   description: レストラン即断即決アプリ
   descriptionDetail: |-
     レストラン検索アプリ。
-    検索したい地点を入力するか、現在地から取得し、
-    3回のスワイプでレストランを提案する。
+    検索したい地点を入力するか現在地から取得し、
+    次に3回のスワイプでレストランを提案してくれる。
 
-    ハッカソンの作品として、5人でフロントエンド, バックエンドに別れて一週間で制作。
-    優秀賞、チームラボ賞を受賞。
+    ハッカソンの作品として、5人でフロントエンド, バックエンドに別れて一週間で制作。 優秀賞、チームラボ賞を受賞。
+
+    フロントエンドを担当。
+
+    リンク
     - [アプリ](https://fooder.pages.dev/)
     - [GitHub](https://github.com/22hack12spring/Fooder-UI)
-    - [ブログ](https://trap.jp/post/1603/)
+    - [ブログ: 2022 春ハッカソン 12班 「Fooder」](https://trap.jp/post/1603/)
   image: /fooder.png
   skills: 
     - Vue
@@ -31,12 +38,12 @@
 - title: tuitui
   description: 観光地直感検索サービス
   descriptionDetail: |-
-    画像を前面に押し出したUIで、直感に任せて観光地を検索できるサービス。
+    画像を並べたUIで、直感に任せて観光地を検索できるサービス。
 
     みやぎハッカソン2023の作品として、チームで3日間で作成。
     フロントエンドを担当し、主にメインの画面を作成し、画像が
     不規則に敷き詰められているように見えるUIを作成した。
-    - [ブログ](https://trap.jp/post/1808/)
+    - [ブログ: みやぎハッカソン2023に参加しました(ずんだ食べ食べ委員会)](https://trap.jp/post/1808/)
 
   image: /tuitui.png
   skills:
@@ -46,7 +53,8 @@
   description: 部内製SNS向けのbot
   descriptionDetail: |-
     部内製SNSの[traQ](https://github.com/traPtitech/traQ)で動作するbot。
-    Rustで書かれており、緊急地震速報(現在提供元の規約変更により廃止済み)、地震情報、シェル芸の実行といった機能を備えている。
+    Rust製で、緊急地震速報(現在は提供元の規約変更により廃止)、地震情報、シェル芸の実行といった機能を備えている。
+
     - [GitHub](https://github.com/itt828/traq-bot-itt)
   image: /bot-itt.png
   skills: ['Rust']
@@ -54,7 +62,7 @@
 - title: blog(WIP)
   description: 自作ブログサービス
   descriptionDetail: |-
-    WebサーバーとしてのRust、GraphQL、クリーンアーキテクチャを学ぶために現在作成中。
+    WebサーバーとしてのRustやGraphQL、クリーンアーキテクチャを学ぶために現在作成中。
     - [GitHub](https://github.com/itt828/graphql-benkyo)
   image: a
   skills: ['Rust', 'GraphQL']
