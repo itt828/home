@@ -31,7 +31,7 @@ const md = new MarkdownIt({
 <style module lang="scss">
 .card {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   border: 2px $accent solid;
