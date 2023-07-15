@@ -3,7 +3,7 @@
     <div :class="$style.path">
       <RouterLink to="/">iitt.dev</RouterLink>
       <span>
-        {{ $route.path }}
+        {{ $route.path === '/' ? '' : $route.path }}
       </span>
     </div>
     <div :class="$style.pages">
