@@ -5,8 +5,8 @@
     <div class="fixed z-10 mt-2 w-full max-w-4xl px-4">
         <AppHeader />
     </div>
-    <div class="flex flex-col mt-16 px-4">
-      <main class="w-full max-w-4xl">
+    <div class="w-full max-w-4xl flex flex-col mt-15 px-4">
+      <main>
         <slot />
       </main>
     </div>

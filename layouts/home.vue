@@ -5,14 +5,12 @@
     <div class="fixed z-10 mt-2 w-full max-w-4xl px-4">
       <AppHeader />
     </div>
-    <main class="w-full">
-      <div>
-        <slot name="top" />
-      </div>
-      <div class="max-w-4xl">
-        <slot name="prof" />
-      </div>
-    </main>
+    <div v-if="$slots.top" class="w-full">
+      <slot name="top" />
+    </div>
+      <main class="w-full max-w-4xl px-4 flex justify-end">
+          <slot />
+      </main>
     <AppFooter class="w-full" />
   </div>
 </template>
