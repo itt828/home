@@ -114,6 +114,8 @@ definePageMeta({
   layout: false,
 });
 
+defineOgImageComponent("HomePage")
+
 const history = [
   {
     period: ["2025年4月", null],

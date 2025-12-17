@@ -13,7 +13,10 @@
         "deploy": "nuxt build && wrangler deploy"
     },
     "dependencies": {
+        "@unhead/vue": "^2.0.19",
         "nuxt": "^4.2.2",
+        "nuxt-og-image": "5.1.13",
+        "unstorage": "^1.17.3",
         "vue": "^3.5.25",
         "vue-router": "^4.6.4"
     },

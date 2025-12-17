@@ -1,5 +1,11 @@
 export default defineNuxtConfig({
-	modules: ["@nuxt/eslint", "@unocss/nuxt", "@nuxt/content", "@vueuse/nuxt"],
+	modules: [
+		"@nuxt/eslint",
+		"@unocss/nuxt",
+		"@nuxt/content",
+		"@vueuse/nuxt",
+		"nuxt-og-image",
+	],
 	devtools: { enabled: true },
 	css: ["@unocss/reset/tailwind.css"],
 	compatibilityDate: "2025-12-17",
@@ -9,6 +15,9 @@ export default defineNuxtConfig({
 				indent: "tab",
 			},
 		},
+	},
+	ogImage: {
+		fonts: ["Noto+Sans+JP:700"],
 	},
 	content: {
 		experimental: { nativeSqlite: true },
