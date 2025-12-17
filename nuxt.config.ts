@@ -17,6 +17,7 @@ export default defineNuxtConfig({
 		},
 	},
 	ogImage: {
+		zeroRuntime: true,
 		fonts: ["Noto+Sans+JP:700"],
 	},
 	content: {
