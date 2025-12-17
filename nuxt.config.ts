@@ -16,6 +16,10 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	site: {
+		URL: "https://iitt.dev",
+	},
+
 	ogImage: {
 		zeroRuntime: true,
 		fonts: ["Noto+Sans+JP:700"],
