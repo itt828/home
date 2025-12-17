@@ -2,7 +2,7 @@ export default defineNuxtConfig({
 	modules: ["@nuxt/eslint", "@unocss/nuxt", "@nuxt/content", "@vueuse/nuxt"],
 	devtools: { enabled: true },
 	css: ["@unocss/reset/tailwind.css"],
-	compatibilityDate: "2025-05-15",
+	compatibilityDate: "2025-12-17",
 	eslint: {
 		config: {
 			stylistic: {
@@ -11,10 +11,7 @@ export default defineNuxtConfig({
 		},
 	},
 	content: {
-		database: {
-			type: "d1",
-			bindingName: "DB",
-		},
+		experimental: { nativeSqlite: true },
 	},
 	nitro: {
 		preset: "cloudflare_module",
