@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="default">
     <template #top>
-      <div class="relative h-screen w-screen self-center grid items-center">
+      <div class="relative h-svh w-svh self-center grid items-center">
         <div class="w-full h-full absolute">
           <img
             class="w-full h-full bg-stone-400 blr-sm object-cover object-[0%_10%]"
