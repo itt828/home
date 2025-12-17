@@ -5,7 +5,7 @@ export default defineConfig({
 		h1: "text-4xl font-bold",
 		h2: "text-2xl font-bold",
 		h3: "text-xl font-bold",
-		h4: "text-md font-bold",
+		h4: "text-base font-bold",
 		"nav-link":
 			"text-gray-600 hover:text-blue-600 font-medium transition-colors",
 	},

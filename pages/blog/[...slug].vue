@@ -1,32 +1,44 @@
 <template>
-	<div class="py-8 pt-20 max-w-4xl mx-auto px-4">
-		<article class="max-w-none">
-			<ContentDoc v-slot="{ doc }">
-				<div class="mb-8 border-b border-gray-200 pb-8">
-					<NuxtLink
-						to="/blog"
-						class="text-gray-500 hover:text-gray-900 mb-4 inline-flex items-center text-sm"
-					>
-						<div class="i-carbon-arrow-left mr-1" /> Back to Blog
-					</NuxtLink>
-					<h1 class="text-4xl font-bold text-gray-900 mb-4 mt-2">
-						{{ doc.title }}
-					</h1>
-					<div class="text-gray-500">
-						{{ new Date(doc.date).toLocaleDateString() }}
-					</div>
+	<div class="mt-4">
+		<article v-if="page" class="max-w-none">
+			<div class="mb-8 border-b border-gray-200 pb-8">
+				<NuxtLink
+					to="/blog"
+					class="text-gray-500 hover:text-gray-900 mb-4 inline-flex items-center text-sm"
+				>
+					<div class="i-carbon-arrow-left mr-1" /> Back to Blog
+				</NuxtLink>
+				<h1 class="text-4xl font-bold text-gray-900 mb-4 mt-2">
+					{{ page.title }}
+				</h1>
+				<div class="text-gray-500">
+					{{ new Date(page.date).toLocaleDateString() }}
 				</div>
+			</div>
 
-				<div class="prose prose-gray max-w-none">
-					<ContentRenderer :value="doc" />
-				</div>
-			</ContentDoc>
+			<div class="prose prose-gray max-w-none">
+				<ContentRenderer :value="page" />
+			</div>
 		</article>
+        <div v-else class="py-20 text-center">
+            <h1 class="text-2xl font-bold text-gray-700">Post not found</h1>
+            <NuxtLink to="/blog" class="text-blue-600 hover:underline mt-4 inline-block">
+                Back to Blog list
+            </NuxtLink>
+        </div>
 	</div>
 </template>
 
-<script setup>
-// No script needed usually, ContentDoc handles fetching
+<script setup lang="ts">
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first()
+})
+
+useSeoMeta({
+  title: page.value?.title,
+  description: page.value?.description,
+})
 </script>
 
 <style>

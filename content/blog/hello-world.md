@@ -1,16 +1,9 @@
 ---
-title: 'Hello World'
-date: '2025-12-10'
-description: 'A classic Hello World post to test the setup.'
+title: 'ホームページをリニューアルしました。'
+date: '2025-12-17'
+description: '2年ぶり'
 ---
 
-# Hello World
-
-This is a standard "Hello World" post.
-
-Here is a list:
-- Item 1
-- Item 2
-- Item 3
-
-And here is some **bold text** and *italic text*.
+自己紹介や就活などに向けて作り直しました。\
+ブログもかけるようにしました。\
+一部まだ工事中です。
