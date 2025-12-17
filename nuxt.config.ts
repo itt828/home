@@ -11,10 +11,19 @@ export default defineNuxtConfig({
 			},
 		},
 	},
-	content: {
-		database: {
-			type: "d1",
-			bindingName: "home-content",
+	nitro: {
+		preset: "cloudflare_module",
+		cloudflare: {
+			deployConfig: true,
+			wrangler: {
+				d1_databases: [
+					{
+						binding: "DB",
+						database_name: "home-content",
+						database_id: "470a1026-cb29-4cb6-98c4-ac2de6372063",
+					},
+				],
+			},
 		},
 	},
 });
