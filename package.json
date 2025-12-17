@@ -18,6 +18,16 @@
         "vue-router": "^4.6.4"
     },
     "packageManager": "pnpm@10.25.0",
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@parcel/watcher",
+            "better-sqlite3",
+            "esbuild",
+            "sharp",
+            "workerd",
+            "unrs-resolver"
+        ]
+    },
     "devDependencies": {
         "@iconify-json/carbon": "^1.2.15",
         "@iconify-json/mdi": "^1.2.3",
