@@ -7,6 +7,6 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Blog - My Portfolio",
+  title: "ブログ - iitt.dev",
 });
 </script>

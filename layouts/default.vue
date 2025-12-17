@@ -5,6 +5,9 @@
     <div class="fixed z-10 mt-2 w-full max-w-4xl px-4">
         <AppHeader />
     </div>
+    <div v-if="$slots.top" class="w-full">
+      <slot name="top" />
+    </div>
     <div class="w-full max-w-4xl flex flex-col mt-15 px-4">
       <main>
         <slot />

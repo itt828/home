@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="home">
+  <NuxtLayout name="default">
     <template #top>
       <div class="relative h-screen w-screen self-center grid items-center">
         <div class="w-full h-full absolute">
@@ -17,18 +17,22 @@
             src="/public/itt828.png"
           />
           <h1 class="h1">itt828</h1>
-          <div class="grid grid-cols-2 gap-4">
-            <a
-              class="i-mdi-github text-2xl"
-              target="_blank"
-              href="https://github.com/itt828"
-            />
-            <a
-              class="i-carbon-logo-x text-2xl"
-              target="_blank"
-              href="https://x.com/itt828"
-            />
-          </div>
+        <div class="grid grid-cols-2 gap-4">
+          <a
+            target="_blank"
+            href="https://github.com/itt828"
+            class="text-gray-800 hover:text-gray-600 transition-colors flex justify-center items-center"
+          >
+            <div class="i-mdi-github text-2xl" />
+          </a>
+          <a
+            target="_blank"
+            href="https://x.com/itt828"
+            class="text-gray-800 hover:text-gray-600 transition-colors flex justify-center items-center"
+          >
+            <div class="i-carbon-logo-x text-2xl" />
+          </a>
+        </div>
         </div>
 
         <div
@@ -71,7 +75,12 @@
               :id="account.name"
               class="bg-white shadow-sm grid"
             >
-              <a v-if="account.link" :href="account.link" target="_blank" class="p-3">
+              <a
+                v-if="account.link"
+                :href="account.link"
+                target="_blank"
+                class="p-3"
+              >
                 <h4 class="h4">{{ account.service }}</h4>
                 <p>{{ account.name }}</p>
               </a>
@@ -98,13 +107,12 @@
 
 <script setup lang="ts">
 useHead({
-  title: "Home - My Portfolio",
+  title: "iitt.dev",
 });
 
 definePageMeta({
-    layout: false
-})
-
+  layout: false,
+});
 
 const history = [
   {
