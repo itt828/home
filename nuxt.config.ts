@@ -1,15 +1,14 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ["@nuxt/eslint", "@unocss/nuxt"],
+	modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/content', '@vueuse/nuxt'],
 	ssr: true,
 	devtools: { enabled: true },
-	compatibilityDate: "2025-05-15",
+	css: ['@unocss/reset/tailwind.css'],
+	compatibilityDate: '2025-05-15',
 	eslint: {
 		config: {
 			stylistic: {
-				indent: "tab",
+				indent: 'tab',
 			},
 		},
 	},
-	css: ["@unocss/reset/tailwind.css"],
-});
+})
