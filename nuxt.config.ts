@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ['@unocss/reset/tailwind.css'],
 	site: {
-		URL: 'https://iitt.dev',
+		url: 'https://iitt.dev',
 	},
 	content: {
 		experimental: { nativeSqlite: true },

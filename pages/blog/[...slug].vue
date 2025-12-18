@@ -50,6 +50,11 @@ useSeoMeta({
 	title: page.value?.title,
 	description: page.value?.description,
 })
+
+defineOgImageComponent('HomePage', {
+	title: page.value?.title,
+	description: page.value?.description,
+})
 </script>
 
 <style>
