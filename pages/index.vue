@@ -129,7 +129,10 @@ definePageMeta({
 	layout: false,
 })
 
-defineOgImageComponent('HomePage')
+defineOgImageComponent('HomePage', {
+    title: "iitt.dev",
+    description: "home page"
+})
 
 const history = [
 	{
