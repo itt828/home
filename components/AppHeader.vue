@@ -1,7 +1,7 @@
 <script setup lang="ts">
-//import { useBrowserLocation } from '@vueuse/core'
+// import { useBrowserLocation } from '@vueuse/core'
 
-//const loc = useBrowserLocation()
+// const loc = useBrowserLocation()
 </script>
 
 <template>
@@ -14,7 +14,7 @@
 			class="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors"
 		>
 			<!-- {{ loc.host }} -->
-            iitt.dev
+			iitt.dev
 		</NuxtLink>
 		<nav class="flex gap-4">
 			<NuxtLink

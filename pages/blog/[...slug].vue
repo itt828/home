@@ -1,6 +1,9 @@
 <template>
 	<div class="mt-4">
-		<article v-if="page" class="max-w-none">
+		<article
+			v-if="page"
+			class="max-w-none"
+		>
 			<div class="mb-8 border-b border-gray-200 pb-8">
 				<NuxtLink
 					to="/blog"
@@ -20,24 +23,32 @@
 				<ContentRenderer :value="page" />
 			</div>
 		</article>
-        <div v-else class="py-20 text-center">
-            <h1 class="text-2xl font-bold text-gray-700">Post not found</h1>
-            <NuxtLink to="/blog" class="text-blue-600 hover:underline mt-4 inline-block">
-                Back to Blog list
-            </NuxtLink>
-        </div>
+		<div
+			v-else
+			class="py-20 text-center"
+		>
+			<h1 class="text-2xl font-bold text-gray-700">
+				Post not found
+			</h1>
+			<NuxtLink
+				to="/blog"
+				class="text-blue-600 hover:underline mt-4 inline-block"
+			>
+				Back to Blog list
+			</NuxtLink>
+		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
+	return queryCollection('blog').path(route.path).first()
 })
 
 useSeoMeta({
-  title: page.value?.title,
-  description: page.value?.description,
+	title: page.value?.title,
+	description: page.value?.description,
 })
 </script>
 
