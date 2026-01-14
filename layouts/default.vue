@@ -2,7 +2,7 @@
 	<div
 		class="min-h-svh grid grid-rows-[1fr_auto] justify-items-center gap-4 bg-stone-100"
 	>
-		<div class="fixed z-10 mt-2 w-full max-w-4xl px-4">
+		<div class="fixed z-10 mt-4 w-full max-w-4xl px-4">
 			<AppHeader />
 		</div>
 		<div

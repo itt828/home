@@ -1,49 +1,49 @@
 export default defineNuxtConfig({
 	modules: [
-		'@nuxt/eslint',
-		'@unocss/nuxt',
-		'@nuxt/content',
-		'@vueuse/nuxt',
-		'nuxt-og-image',
+		"@nuxt/eslint",
+		"@unocss/nuxt",
+		"@nuxt/content",
+		"@vueuse/nuxt",
+		"nuxt-og-image",
 	],
 	devtools: { enabled: true },
-	css: ['@unocss/reset/tailwind.css'],
+	css: ["@unocss/reset/tailwind.css"],
 	site: {
-		url: 'https://iitt.dev',
+		url: "https://iitt.dev",
 	},
 	content: {
 		experimental: { nativeSqlite: true },
 	},
-	compatibilityDate: '2025-12-17',
+	compatibilityDate: "2025-12-17",
 	nitro: {
-		preset: 'cloudflare_module',
+		preset: "cloudflare_module",
 		cloudflare: {
 			deployConfig: true,
 			wrangler: {
 				d1_databases: [
 					{
-						binding: 'DB',
-						database_name: 'home-content',
-						database_id: '470a1026-cb29-4cb6-98c4-ac2de6372063',
+						binding: "DB",
+						database_name: "home-content",
+						database_id: "470a1026-cb29-4cb6-98c4-ac2de6372063",
 					},
 				],
 			},
 		},
 		prerender: {
 			crawlLinks: true,
-			routes: ['/'],
+			routes: ["/"],
 		},
 	},
 	eslint: {
 		config: {
 			stylistic: {
-				indent: 'tab',
+				indent: "tab",
 			},
 		},
 	},
 
 	ogImage: {
 		zeroRuntime: true,
-		fonts: ['Noto+Sans+JP:700'],
+		fonts: ["Noto+Sans+JP:700"],
 	},
-})
+});

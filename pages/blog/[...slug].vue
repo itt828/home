@@ -19,6 +19,45 @@
 				</div>
 			</div>
 
+			<nav
+				v-if="page.body?.toc?.links?.length"
+				class="mb-8 bg-gray-50 border border-gray-100 rounded-xl p-4"
+			>
+				<div class="flex items-center gap-2 mb-3 text-gray-700">
+					<div class="i-carbon-list" />
+					<span class="font-bold">目次</span>
+				</div>
+				<ul class="space-y-2 text-sm">
+					<li
+						v-for="link in page.body.toc.links"
+						:key="link.id"
+					>
+						<a
+							:href="`#${link.id}`"
+							class="text-gray-600 hover:text-blue-600 hover:underline"
+						>
+							{{ link.text }}
+						</a>
+						<ul
+							v-if="link.children"
+							class="mt-2 ml-4 space-y-2"
+						>
+							<li
+								v-for="child in link.children"
+								:key="child.id"
+							>
+								<a
+									:href="`#${child.id}`"
+									class="text-gray-500 hover:text-blue-600 hover:underline"
+								>
+									{{ child.text }}
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
 			<div class="prose prose-gray max-w-none">
 				<ContentRenderer :value="page" />
 			</div>
@@ -68,12 +107,14 @@ defineOgImageComponent('HomePage', {
     font-weight: 700;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    scroll-margin-top: 5rem;
 }
 .prose h3 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+    scroll-margin-top: 5rem;
 }
 .prose p {
     margin-bottom: 1.25rem;
@@ -97,5 +138,9 @@ defineOgImageComponent('HomePage', {
     border-radius: 0.5rem;
     overflow-x: auto;
     margin-bottom: 1.5rem;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 </style>

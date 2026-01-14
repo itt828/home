@@ -7,7 +7,7 @@
 <template>
 	<header
 		b="1 gray-200"
-		class="px-4 py-1 flex items-center justify-between shadow-sm rounded-xl bg-gray-300"
+		class="px-4 py-2 flex items-center justify-between shadow-sm rounded-xl bg-gray-300"
 	>
 		<NuxtLink
 			to="/"
