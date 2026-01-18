@@ -3,8 +3,8 @@
     <template #top>
       <div class="relative h-svh w-svw grid items-center">
         <div class="w-full h-full absolute">
-          <div class="w-full h-full bg-stone-400" />
-          <!-- <img class="w-full h-full blur-sm object-cover object-[0%_10%]" src="/public/illust.webp" /> -->
+          <!-- <div class="w-full h-full bg-stone-400" /> -->
+          <img class="w-full h-full blur-sm object-cover object-[0%_10%]" src="/public/illust.webp" />
         </div>
         <div class="relative grid gap-4 justify-center justify-items-center">
           <img
