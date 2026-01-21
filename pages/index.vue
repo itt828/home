@@ -4,9 +4,16 @@
       <div class="relative h-svh w-svw grid items-center">
         <div class="w-full h-full absolute">
           <!-- <div class="w-full h-full bg-stone-400" /> -->
-          <img class="w-full h-full blur-sm object-cover object-[0%_10%]" src="/public/illust.webp" />
+          <img
+            class="w-full h-full object-cover object-[0%_10%] transition-all duration-500"
+            :class="showOverlay ? 'blur-sm' : ''"
+            src="/public/illust.webp"
+          />
         </div>
-        <div class="relative grid gap-4 justify-center justify-items-center">
+        <div
+          class="relative grid gap-4 justify-center justify-items-center transition-opacity duration-500"
+          :class="showOverlay ? '' : 'opacity-0'"
+        >
           <img
             class="w-32 h-32 rounded-full border-4 border-gray-700 shadow-lg"
             src="/public/itt828.png"
@@ -25,13 +32,23 @@
           </div>
         </div>
         <div
-          class="absolute bottom-0 w-full z-5 bg-gray-700 py-2 flex justify-center"
+          class="absolute bottom-0 w-full z-5 bg-gray-700 py-2 flex justify-center transition-opacity duration-500"
+          :class="showOverlay ? '' : 'opacity-0'"
         >
           <div class="flex items-center gap-1">
             <span class="h-6 text-white i-mdi-chevron-double-down" />
             <span class="text-md text-white">プロフィール</span>
           </div>
         </div>
+        <button
+          class="absolute bottom-12 right-4 z-10 p-2 rounded-2 bg-stone-800/50 hover:bg-stone-800/80 backdrop-blur-md text-white transition-colors"
+          @click="showOverlay = !showOverlay"
+        >
+          <div
+            :class="showOverlay ? 'i-mdi-blur' : 'i-mdi-blur-off'"
+            class="text-2xl"
+          />
+        </button>
       </div>
     </template>
     <div class="grid gap-8">
@@ -119,6 +136,8 @@ defineOgImageComponent("HomePage", {
   title: "iitt.dev",
   description: "home page",
 });
+
+const showOverlay = ref(true);
 
 const history = [
   {
