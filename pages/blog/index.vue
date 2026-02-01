@@ -14,7 +14,9 @@
 					:to="article.path"
 					class="block"
 				>
-					<h2 class="text-2xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors">
+					<h2
+						class="text-2xl font-bold text-gray-800 mb-2 hover:text-blue-600 transition-colors"
+					>
 						{{ article.title }}
 					</h2>
 					<div class="text-sm text-gray-500 mb-4">
@@ -42,7 +44,6 @@ const { data: posts } = await useAsyncData('blog', () => {
 
 useHead({
 	title: 'ブログ - iitt.dev',
-	meta: [
-	],
+	meta: [],
 })
 </script>
