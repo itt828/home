@@ -90,9 +90,10 @@ useSeoMeta({
 	description: page.value?.description,
 })
 
-defineOgImageComponent('HomePage', {
+defineOgImageComponent('BlogPage', {
 	title: page.value?.title,
 	description: page.value?.description,
+	date: page.value?.date ? new Date(page.value.date).toLocaleDateString() : '',
 })
 </script>
 

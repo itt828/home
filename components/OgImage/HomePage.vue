@@ -12,7 +12,7 @@ withDefaults(
 
 <template>
     <div
-        class="h-full w-full flex items-center justify-start border-solid border-stone-500 border-[12px] bg-gray-50"
+        class="h-full w-full flex items-center justify-start"
     >
         <div
             class="flex flex-col items-center justify-center w-full h-full p-12 text-center"
