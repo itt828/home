@@ -1,9 +1,8 @@
 ---
-title: 'Linuxデスクトップ2026'
-date: '2026-01-14'
-description: '現時点でのLinuxデスクトップのウィンドウマネージャー、ウィジェットなど'
+title: "Linuxデスクトップ2026"
+date: "2026-01-14"
+description: "現時点でのLinuxデスクトップのウィンドウマネージャー、ウィジェットなど"
 ---
-
 
 ## はじめに
 
@@ -11,7 +10,6 @@ Manjaro LinuxをノートPCにインストールして普段使いしていま�
 
 ::link-card{url="https://manjaro.org"}
 ::
-
 
 理由は、Linuxに慣れておきたかったのと、
 WSL2があるとはいえ、WindowsよりもLinux環境の方が開発を行う際には便利そうだったためです。
@@ -27,7 +25,6 @@ CLIツール類であればLinuxは基本的にサポートされていますし
 重要な会議等の場合には利用を避けています。
 これらの状況ではデュアルブートしているWindowsを立ち上げて対処しています。
 
-
 Linuxデスクトップを利用する大きなメリットとして、デスクトップ環境を高度にカスタマイズできる点があります。
 Unixpornなどと呼ばれています。
 例えば、私は現在「Niri」というWaylandコンポジターを使用しています。
@@ -41,13 +38,14 @@ Niriはスクロール可能なタイル型コンポジターで、新しいウ�
 以下では、現在使用している私のデスクトップ環境について紹介します。
 
 ## 外観
-![Unixpornのスクリーンショット](/blog/assets/unixporn-screenshot.png)
 
+![Unixpornのスクリーンショット](/blog/assets/unixporn-screenshot.png)
 
 FirefoxとWeztermのウィンドウが2つ表示されています。上部にはQuickshellを用いて作成したバーがあります。
 右のWeztermはHelixでコーディングしている様子です。フローティングウィンドウではfasetfetchを実行しています。
 
 ## 使用したツール等
+
 dotfilesを公開しています。
 ::link-card{url="https://github.com/itt828/dots"}
 ::
@@ -57,9 +55,9 @@ chezmoiなどのdotfiles向けの環境構築ツールは使用しておらず�
 ここからはdotfilesで主に用いたツール、アプリケーションについて列挙します。
 
 ### Niri
+
 ::link-card{url="https://github.com/YaLTeR/niri"}
 ::
-
 
 先程少し紹介したスクロール可能なタイル型Waylandコンポジターです。\
 ウィンドウを横に並べ、スクロールして見るウィンドウを切り替えるという体験が気に入っています。
@@ -78,6 +76,7 @@ ArchWikiのウィンドウマネージャの項目でも紹介されています
 ::
 
 ### Quickshell
+
 ::link-card{url="https://quickshell.org"}
 ::
 
@@ -97,6 +96,7 @@ Qtでウィジェットを作成するツールです。QMLと呼ばれる言語
 ::
 
 ### AGS(旧)
+
 ::link-card{url="https://github.com/aylur/ags"}
 ::
 
@@ -112,20 +112,21 @@ Qtでウィジェットを作成するツールです。QMLと呼ばれる言語
 ウィジェット作成フレームワークのRedditのr/unixpornなどのコミュニティの流行りがAGSやewwからQuickshellに移っているのを感じ、私も現在はQuickshellを使用しています。
 
 ### Fuzzel
+
 ::link-card{url="https://codeberg.org/dnkl/fuzzel"}
 ::
 
 アプリランチャーです。ショートカットキーを登録して起動するようにしています。
 
-
 ### Helix
+
 ::link-card{url="https://github.com/helix-editor/helix"}
 ::
 テキストエディタです。
 vimに似た操作体系ですが、LSPとTree-sitterに標準で対応していて、気に入っています。
 
-
 ### wezterm
+
 ::link-card{url="https://github.com/wezterm/wezterm"}
 ::
 
@@ -134,6 +135,7 @@ vimに似た操作体系ですが、LSPとTree-sitterに標準で対応してい
 stableリリースが全然出ないのでビルドして使っています。
 
 ### fish
+
 ::link-card{url="https://fishshell.com/"}
 ::
 
@@ -147,32 +149,29 @@ Hyprlandコンポジターのdiscordサーバー、日本でも技術ブログ�
 ::link-card{url="https://www.reddit.com/r/unixporn/"}
 ::
 
-
 個人的に気になったLinuxデスクトップをいくつか列挙して終わります。
+
 ### CelestialCrafter/dotfiles
+
 ::link-card{url="https://github.com/CelestialCrafter/dotfiles"}
 ::
 ![CelestialCrafter/dotfiles](https://github.com/user-attachments/assets/879768e4-5a9f-4207-9e7e-7f6eaa9d0f18)
 
-
 ### elenapan/dotfiles
+
 ::link-card{url="https://github.com/elenapan/dotfiles"}
 ::
 ![elenapan/dotfiles](https://raw.githubusercontent.com/wiki/elenapan/dotfiles/assets/amarena.png)
 
-
 ### Tail-R/xmonad-eww-dotfiles
+
 ::link-card{url="https://github.com/Tail-R/xmonad-eww-dotfiles"}
 ::
 
 ![Tail-R/xmonad-eww-dotfiles](https://github.com/Tail-R/xmonad_eww_dotfiles/assets/132870183/95fea5d7-28c2-442e-af79-25a2f5a93587)
 
-
 など
 
 ## おわりに
+
 これからも定期的に自分のセットアップを報告していけたらと思います。
-
-
-
-

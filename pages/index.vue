@@ -35,9 +35,7 @@
                     :class="showOverlay ? '' : 'opacity-0'"
                 >
                     <div class="flex items-center gap-1">
-                        <span
-                            class="h-6 text-white i-mdi-chevron-double-down"
-                        />
+                        <span class="h-6 text-white i-mdi-chevron-double-down" />
                         <span class="text-md text-white">プロフィール</span>
                     </div>
                 </div>
@@ -45,10 +43,7 @@
                     class="absolute bottom-12 right-4 z-10 p-2 rounded-2 bg-stone-800/50 hover:bg-stone-800/80 backdrop-blur-md text-white transition-colors"
                     @click="showOverlay = !showOverlay"
                 >
-                    <div
-                        :class="showOverlay ? 'i-mdi-blur' : 'i-mdi-blur-off'"
-                        class="text-2xl"
-                    />
+                    <div :class="showOverlay ? 'i-mdi-blur' : 'i-mdi-blur-off'" class="text-2xl" />
                 </button>
             </div>
         </template>
@@ -80,12 +75,7 @@
                         :id="account.service"
                         class="bg-white shadow-sm grid"
                     >
-                        <a
-                            v-if="account.link"
-                            :href="account.link"
-                            target="_blank"
-                            class="p-3"
-                        >
+                        <a v-if="account.link" :href="account.link" target="_blank" class="p-3">
                             <h4 class="h4">{{ account.service }}</h4>
                             <p>{{ account.name }}</p>
                         </a>

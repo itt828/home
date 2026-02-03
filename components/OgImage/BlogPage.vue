@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { jaModel, Parser } from 'budoux';
+import { jaModel, Parser } from "budoux";
 
 const props = withDefaults(
     defineProps<{
@@ -14,17 +14,17 @@ const props = withDefaults(
     },
 );
 
-const parser = new Parser(jaModel)
+const parser = new Parser(jaModel);
 const parsedTitle = computed(() => parser.parse(props.title));
-const parsedDescription = computed(() => props.description ? parser.parse(props.description) : "");
+const parsedDescription = computed(() =>
+    props.description ? parser.parse(props.description) : "",
+);
 </script>
 
 <template>
     <div class="h-full w-full flex flex-col justify-between bg-white p-16 pt-20 pb-20">
         <div class="flex flex-col gap-6">
-            <div class="text-3xl font-bold text-gray-400">
-                iitt.dev
-            </div>
+            <div class="text-3xl font-bold text-gray-400">iitt.dev</div>
             <h1 class="text-[70px] font-bold text-gray-900 leading-tight">
                 <span v-for="(s, i) in parsedTitle" :key="i">
                     {{ s }}
@@ -38,8 +38,8 @@ const parsedDescription = computed(() => props.description ? parser.parse(props.
         </div>
 
         <div v-if="date" class="flex items-baseline gap-2 text-3xl text-gray-500 font-medium">
-             <Icon name="mdi:calendar" mode="svg" />
-             {{ date }}
+            <Icon name="mdi:calendar" mode="svg" />
+            {{ date }}
         </div>
     </div>
 </template>

@@ -1,0 +1,19 @@
+[[language]]
+name = "vue"
+language-servers = [
+    { name = "vtsls", except-features = [
+        "format",
+    ] },
+    "oxfmt",
+    "oxlint",
+    "unocss-language-server",
+]
+auto-format = true
+
+[[language]]
+name = "javascript"
+language-servers = [{ name = "vtsls", except-features = ["format"] }, "oxfmt", "oxlint"]
+
+[[language]]
+name = "typescript"
+language-servers = [{ name = "vtsls", except-features = ["format"] }, "oxfmt", "oxlint"]
