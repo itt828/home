@@ -8,33 +8,27 @@ export default defineNuxtConfig({
 		'@vueuse/nuxt',
 		'nuxt-og-image',
 		'@nuxt/icon',
+		'@nuxtjs/seo',
 	],
 	devtools: { enabled: true },
 	css: ['@unocss/reset/tailwind.css'],
 	site: {
 		url: 'https://iitt.dev',
+		name: 'iitt.dev',
 	},
 	content: {
 		experimental: { nativeSqlite: true },
 	},
-	compatibilityDate: '2025-12-17',
+	compatibilityDate: '2026-02-04',
 	nitro: {
 		preset: 'cloudflare_module',
 		cloudflare: {
 			deployConfig: true,
-			wrangler: {
-				d1_databases: [
-					{
-						binding: 'DB',
-						database_name: 'home-content',
-						database_id: '470a1026-cb29-4cb6-98c4-ac2de6372063',
-					},
-				],
-			},
+			nodeCompat: true,
 		},
 		prerender: {
 			crawlLinks: true,
-			routes: ['/'],
+			routes: ['/', '/blog/**'],
 		},
 		alias: {
 			canvas: fileURLToPath(new URL('./mocks/canvas.mjs', import.meta.url)),
