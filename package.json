@@ -11,6 +11,7 @@
         "lint:fix": "oxlint --fix",
         "fmt": "oxfmt",
         "fmt:check": "oxfmt --check",
+        "textlint": "textlint **/*.md",
         "deploy": "nuxt build && wrangler deploy"
     },
     "dependencies": {
@@ -28,7 +29,6 @@
         "@iconify-json/carbon": "^1.2.15",
         "@iconify-json/mdi": "^1.2.3",
         "@nuxt/content": "^3.9.0",
-        "@nuxt/eslint": "1.12.1",
         "@unocss/nuxt": "^66.5.10",
         "@vueuse/core": "^14.1.0",
         "@vueuse/nuxt": "^14.1.0",

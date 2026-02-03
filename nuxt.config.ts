@@ -2,7 +2,6 @@ import { fileURLToPath } from "node:url";
 
 export default defineNuxtConfig({
     modules: [
-        "@nuxt/eslint",
         "@unocss/nuxt",
         "@nuxt/content",
         "@vueuse/nuxt",
@@ -34,14 +33,6 @@ export default defineNuxtConfig({
             canvas: fileURLToPath(new URL("./mocks/canvas.mjs", import.meta.url)),
         },
     },
-    eslint: {
-        config: {
-            stylistic: {
-                indent: "tab",
-            },
-        },
-    },
-
     ogImage: {
         zeroRuntime: true,
         fonts: ["Noto+Sans+JP:700"],
