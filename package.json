@@ -1,40 +1,41 @@
 {
-  "name": "home",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "preview": "wrangler dev",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "deploy": "nuxt build && wrangler deploy"
-  },
-  "dependencies": {
-    "@unhead/vue": "^2.0.19",
-    "budoux": "^0.7.0",
-    "nuxt": "^4.2.2",
-    "nuxt-og-image": "5.1.13",
-    "unstorage": "^1.17.3",
-    "vue": "^3.5.25",
-    "vue-router": "^4.6.4"
-  },
-  "packageManager": "pnpm@10.25.0",
-  "devDependencies": {
-    "@iconify-json/carbon": "^1.2.15",
-    "@iconify-json/mdi": "^1.2.3",
-    "@nuxt/content": "^3.9.0",
-    "@nuxt/eslint": "1.12.1",
-    "@unocss/nuxt": "^66.5.10",
-    "@vueuse/core": "^14.1.0",
-    "@vueuse/nuxt": "^14.1.0",
-    "eslint": "^9.39.1",
-    "textlint": "^15.5.0",
-    "textlint-filter-rule-allowlist": "^4.0.0",
-    "textlint-filter-rule-comments": "^1.3.0",
-    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
-    "unocss": "^66.5.10",
-    "wrangler": "^4.55.0"
-  }
+    "name": "home",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "preview": "wrangler dev",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "deploy": "nuxt build && wrangler deploy"
+    },
+    "dependencies": {
+        "@nuxt/icon": "2.2.1",
+        "@unhead/vue": "^2.0.19",
+        "budoux": "^0.7.0",
+        "nuxt": "^4.2.2",
+        "nuxt-og-image": "5.1.13",
+        "unstorage": "^1.17.3",
+        "vue": "^3.5.25",
+        "vue-router": "^4.6.4"
+    },
+    "packageManager": "pnpm@10.25.0",
+    "devDependencies": {
+        "@iconify-json/carbon": "^1.2.15",
+        "@iconify-json/mdi": "^1.2.3",
+        "@nuxt/content": "^3.9.0",
+        "@nuxt/eslint": "1.12.1",
+        "@unocss/nuxt": "^66.5.10",
+        "@vueuse/core": "^14.1.0",
+        "@vueuse/nuxt": "^14.1.0",
+        "eslint": "^9.39.1",
+        "textlint": "^15.5.0",
+        "textlint-filter-rule-allowlist": "^4.0.0",
+        "textlint-filter-rule-comments": "^1.3.0",
+        "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+        "unocss": "^66.5.10",
+        "wrangler": "^4.55.0"
+    }
 }

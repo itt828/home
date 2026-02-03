@@ -93,7 +93,7 @@ useSeoMeta({
 defineOgImageComponent('BlogPage', {
 	title: page.value?.title,
 	description: page.value?.description,
-	date: page.value?.date ? new Date(page.value.date).toLocaleDateString() : '',
+	date: page.value?.date ?? '',
 })
 </script>
 

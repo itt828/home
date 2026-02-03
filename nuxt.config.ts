@@ -1,3 +1,5 @@
+import { fileURLToPath } from 'node:url'
+
 export default defineNuxtConfig({
 	modules: [
 		'@nuxt/eslint',
@@ -5,6 +7,7 @@ export default defineNuxtConfig({
 		'@nuxt/content',
 		'@vueuse/nuxt',
 		'nuxt-og-image',
+		'@nuxt/icon',
 	],
 	devtools: { enabled: true },
 	css: ['@unocss/reset/tailwind.css'],
@@ -32,6 +35,9 @@ export default defineNuxtConfig({
 		prerender: {
 			crawlLinks: true,
 			routes: ['/'],
+		},
+		alias: {
+			canvas: fileURLToPath(new URL('./mocks/canvas.mjs', import.meta.url)),
 		},
 	},
 	eslint: {
