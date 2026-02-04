@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         },
         prerender: {
             crawlLinks: true,
-            routes: ["/", "/blog/**"],
+            routes: ["/"],
         },
         alias: {
             canvas: fileURLToPath(new URL("./mocks/canvas.mjs", import.meta.url)),
