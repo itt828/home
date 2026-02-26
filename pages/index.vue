@@ -193,5 +193,31 @@ const works = [
         description: "サークル内のイベント管理ツール。",
         link: "https://github.com/traPtitech/knoQ-UI",
     },
+    {
+        name: "UnoCSS Preset GTK",
+        description:
+            "JSX記法でGJSを書く(github.com/aylur/gnim)際にUnoCSSを用いるためのプリセット。",
+        link: "https://github.com/itt828/unocss-preset-gtk",
+    },
+    {
+        name: "traQbot itt",
+        description: "traQ上で動作するbot。",
+        link: "https://github.com/itt828/traq-bot-itt",
+    },
+    {
+        name: "Qard",
+        description: "traQの特定のチャンネルにメッセージカードを送信できるwebアプリ。",
+        link: "https://github.com/traP-jp/h23w_01-backend",
+    },
+    {
+        name: "tuitui",
+        description: "画像を無限スクロールするUIで直感的に観光地を探すwebアプリ。",
+        link: "",
+    },
+    {
+        name: "Fooder",
+        description: "スワイプでレストランを探せるwebアプリ。",
+        link: "https://github.com/22hack12spring/Fooder-UI",
+    },
 ];
 </script>
