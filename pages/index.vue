@@ -40,10 +40,12 @@
                     </div>
                 </div>
                 <button
-                    class="absolute bottom-12 right-4 z-10 p-2 rounded-2 bg-stone-800/50 hover:bg-stone-800/80 backdrop-blur-md text-white transition-colors"
+                    class="absolute bottom-12 right-2 z-10 p-2 rounded-2 bg-stone-800/50 hover:bg-stone-800/80 backdrop-blur-md text-white transition-colors grid gap-2 items-center grid-cols-[auto_auto]"
                     @click="showOverlay = !showOverlay"
                 >
                     <div :class="showOverlay ? 'i-mdi-blur' : 'i-mdi-blur-off'" class="text-2xl" />
+                    <span v-if="showOverlay"> 背景を見る </span>
+                    <span v-else> 背景を隠す </span>
                 </button>
             </div>
         </template>
