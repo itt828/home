@@ -77,7 +77,12 @@
                         :id="account.service"
                         class="bg-white shadow-sm grid"
                     >
-                        <a v-if="account.link" :href="account.link" target="_blank" class="p-3">
+                        <a
+                            v-if="account.link"
+                            :href="account.link"
+                            target="_blank"
+                            class="p-3 hover:bg-gray-200"
+                        >
                             <h4 class="h4">{{ account.service }}</h4>
                             <p>{{ account.name }}</p>
                         </a>
