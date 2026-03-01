@@ -103,19 +103,20 @@
 
             <section class="grid gap-4">
                 <h2 class="h2">制作物</h2>
-                <a
-                    class="bg-white p-4 rounded-md shadow-md"
-                    v-for="work in works"
-                    :href="work.link"
-                    target="_blank"
-                >
-                    <div>
-                        <h3 class="h3 mb-2">{{ work.name }}</h3>
-                        <p class="text-gray-700">
-                            {{ work.description }}
-                        </p>
-                    </div>
-                </a>
+                <ul class="list-disc pl-5">
+                    <li class="pb-4" v-for="work in works">
+                        <a class="block nav-link" :href="work.link" target="_blank">
+                            <!-- <h3 class="h3"> -->
+                            <span class="h3">
+                                {{ work.name }}
+                            </span>
+                            <p class="text-gray-500">
+                                {{ work.description }}
+                            </p>
+                            <!-- </h3> -->
+                        </a>
+                    </li>
+                </ul>
             </section>
         </div>
     </NuxtLayout>
