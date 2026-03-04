@@ -6,7 +6,7 @@ export default defineConfig({
         h2: "text-2xl font-bold",
         h3: "text-xl font-bold",
         h4: "text-base font-bold",
-        "nav-link": "text-gray-600 hover:text-blue-600 font-medium transition-colors",
+        "nav-link": "text-gray-600 hover:text-blue-600 font-medium transition-colors underline",
     },
     presets: [presetIcons(), presetWind4()],
 });

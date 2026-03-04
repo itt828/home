@@ -105,15 +105,13 @@
                 <h2 class="h2">制作物</h2>
                 <ul class="list-disc pl-5">
                     <li class="pb-4" v-for="work in works">
-                        <a class="block nav-link" :href="work.link" target="_blank">
-                            <!-- <h3 class="h3"> -->
-                            <span class="h3">
+                        <a class="block nav-link no-underline" :href="work.link" target="_blank">
+                            <span class="font-bold underline">
                                 {{ work.name }}
                             </span>
-                            <p class="text-gray-500">
+                            <p class="font-normal">
                                 {{ work.description }}
                             </p>
-                            <!-- </h3> -->
                         </a>
                     </li>
                 </ul>
