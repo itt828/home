@@ -211,7 +211,7 @@ const works = [
     {
         name: "tuitui",
         description: "画像を無限スクロールするUIで直感的に観光地を探すwebアプリ。",
-        link: "",
+        link: "https://trap.jp/post/1808",
     },
     {
         name: "Fooder",
