@@ -81,7 +81,7 @@
                             v-if="account.link"
                             :href="account.link"
                             target="_blank"
-                            class="p-3 hover:bg-gray-200 b b-transparent hover:b hover:b-gray-600"
+                            class="p-3 hover:bg-gray-100 b b-transparent hover:b-gray-600"
                         >
                             <h4 class="h4">{{ account.service }}</h4>
                             <p>{{ account.name }}</p>
