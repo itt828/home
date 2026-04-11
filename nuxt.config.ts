@@ -38,6 +38,9 @@ export default defineNuxtConfig({
         zeroRuntime: true,
     },
     fonts: {
+        defaults: {
+            subsets: ["latin", "latin-ext", "japanese"],
+        },
         families: [
             {
                 name: "M PLUS 1",
