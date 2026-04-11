@@ -40,7 +40,8 @@ export default defineNuxtConfig({
     fonts: {
         families: [
             {
-                name: "Noto Sans JP",
+                name: "M PLUS 1",
+                // name: "Noto Sans JP",
                 weights: [400, 500, 700],
                 global: true,
                 subsets: ["japanese"],

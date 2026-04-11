@@ -22,7 +22,7 @@ const parsedDescription = computed(() => parser.parse(props.description));
 <template>
     <div
         class="h-full w-full flex flex-col justify-between bg-white p-16 pt-20 pb-20"
-        style="font-family: 'Noto Sans JP'"
+        style="font-family: 'M PLUS 1'"
     >
         <div class="flex flex-col gap-6">
             <div class="text-3xl font-bold text-gray-400">iitt.dev</div>
