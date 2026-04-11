@@ -5,6 +5,7 @@ export default defineNuxtConfig({
         "@unocss/nuxt",
         "@nuxt/content",
         "@vueuse/nuxt",
+        "@nuxt/fonts",
         "nuxt-og-image",
         "@nuxt/icon",
         "@nuxtjs/seo",
@@ -35,6 +36,15 @@ export default defineNuxtConfig({
     },
     ogImage: {
         zeroRuntime: true,
-        fonts: ["Noto+Sans+JP:700"],
+    },
+    fonts: {
+        families: [
+            {
+                name: "Noto Sans JP",
+                weights: [400, 500, 700],
+                global: true,
+                subsets: ["japanese"],
+            },
+        ],
     },
 });

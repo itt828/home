@@ -71,7 +71,7 @@ useSeoMeta({
     description: page.value?.description,
 });
 
-defineOgImageComponent("BlogPage", {
+defineOgImage("BlogPage", {
     title: page.value?.title,
     description: page.value?.description,
     date: page.value?.date ?? "",

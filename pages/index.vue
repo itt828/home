@@ -129,7 +129,7 @@ definePageMeta({
     layout: false,
 });
 
-defineOgImageComponent("HomePage", {
+defineOgImage("HomePage", {
     title: "iitt.dev",
     description: "home page",
 });
