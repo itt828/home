@@ -47,6 +47,7 @@ export default defineNuxtConfig({
                 // name: "Noto Sans JP",
                 weights: [400, 500, 700],
                 global: true,
+                preload: false,
             },
         ],
     },
